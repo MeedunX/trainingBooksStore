@@ -3,15 +3,21 @@ import './styles';
 import { BrowserRouter } from 'react-router-dom';
 import { AppRouter } from './routers';
 import { Header } from '../widgets/header';
+import { Provider } from 'react-redux';
+import { store } from '../shared/lib/store/store';
+
 
 function App() {
   return (
     <div>
-      
-      <BrowserRouter>
-          <Header/>
-          <AppRouter/>
-      </BrowserRouter>
+      <React.StrictMode>
+        <Provider store={store}>
+          <BrowserRouter>
+            <Header />
+            <AppRouter />
+          </BrowserRouter>
+        </Provider>
+      </React.StrictMode>
     </div>
   );
 }

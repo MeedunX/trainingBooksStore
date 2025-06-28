@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "image": "war-and-peace.jpg",
+    "title": "Война и мир",
+    "authors": "Лев Толстой",
+    "year": "2025",
+    "pages": "675",
+    "price": 799
+  },
+  {
+    "id": 2,
+    "image": "crime-and-punishment.jpg",
+    "title": "Преступление и наказание",
+    "authors": "Фёдор Достоевский",
+    "year": "2025",
+    "pages": "550",
+    "price": 649
+  },
+  {
+    "id": 3,
+    "image": "master-and-margarita.jpg",
+    "title": "Мастер и Маргарита",
+    "authors": "Михаил Булгаков",
+    "year": "2025",
+    "pages": "335",
+    "price": 599
+  }
+]
