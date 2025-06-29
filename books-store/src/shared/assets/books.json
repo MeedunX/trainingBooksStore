@@ -25,5 +25,203 @@
     "year": "2025",
     "pages": "335",
     "price": 599
+  },
+  {
+    "id": 4,
+    "image": "anna-karenina.jpg",
+    "title": "Анна Каренина",
+    "authors": "Лев Толстой",
+    "year": "2024",
+    "pages": "450",
+    "price": 699
+  },
+  {
+    "id": 5,
+    "image": "the-idiot.jpg",
+    "title": "Идиот",
+    "authors": "Фёдор Достоевский",
+    "year": "2024",
+    "pages": "600",
+    "price": 679
+  },
+  {
+    "id": 6,
+    "image": "the-brothers-karamazov.jpg",
+    "title": "Братья Карамазовы",
+    "authors": "Фёдор Достоевский",
+    "year": "2024",
+    "pages": "800",
+    "price": 799
+  },
+  {
+    "id": 7,
+    "image": "and Quiet Flows the Don.jpg",
+    "title": "Тихий Дон",
+    "authors": "Михаил Шолохов",
+    "year": "2023",
+    "pages": "900",
+    "price": 899
+  },
+  {
+    "id": 8,
+    "image": "the-captains-daughter.jpg",
+    "title": "Капитанская дочка",
+    "authors": "Александр Пушкин",
+    "year": "2023",
+    "pages": "200",
+    "price": 499
+  },
+  {
+    "id": 9,
+    "image": "dead-souls.jpg",
+    "title": "Мёртвые души",
+    "authors": "Николай Гоголь",
+    "year": "2023",
+    "pages": "300",
+    "price": 549
+  },
+  {
+    "id": 10,
+    "image": "fathers-and-sons.jpg",
+    "title": "Отцы и дети",
+    "authors": "Иван Тургенев",
+    "year": "2023",
+    "pages": "250",
+    "price": 499
+  },
+  {
+    "id": 11,
+    "image": "the-insulted-and-injured.jpg",
+    "title": "Униженные и оскорблённые",
+    "authors": "Фёдор Достоевский",
+    "year": "2022",
+    "pages": "320",
+    "price": 549
+  },
+  {
+    "id": 12,
+    "image": "doctor-zhivago.jpg",
+    "title": "Доктор Живаго",
+    "authors": "Борис Пастернак",
+    "year": "2022",
+    "pages": "550",
+    "price": 699
+  },
+  {
+    "id": 13,
+    "image": "we.jpg",
+    "title": "Мы",
+    "authors": "Евгений Замятин",
+    "year": "2022",
+    "pages": "220",
+    "price": 449
+  },
+  {
+    "id": 14,
+    "image": "the-heart-of-a-dog.jpg",
+    "title": "Собачье сердце",
+    "authors": "Михаил Булгаков",
+    "year": "2022",
+    "pages": "150",
+    "price": 399
+  },
+  {
+    "id": 15,
+    "image": "the-fountainhead.jpg",
+    "title": "Источник",
+    "authors": "Айн Рэнд",
+    "year": "2022",
+    "pages": "750",
+    "price": 899
+  },
+  {
+    "id": 16,
+    "image": "1984.jpg",
+    "title": "1984",
+    "authors": "Джордж Оруэлл",
+    "year": "2021",
+    "pages": "320",
+    "price": 549
+  },
+  {
+    "id": 17,
+    "image": "animal-farm.jpg",
+    "title": "Скотный двор",
+    "authors": "Джордж Оруэлл",
+    "year": "2021",
+    "pages": "150",
+    "price": 399
+  },
+  {
+    "id": 18,
+    "image": "brave-new-world.jpg",
+    "title": "О дивный новый мир",
+    "authors": "Олдос Хаксли",
+    "year": "2021",
+    "pages": "280",
+    "price": 499
+  },
+  {
+    "id": 19,
+    "image": "to-kill-a-mockingbird.jpg",
+    "title": "Убить пересмешника",
+    "authors": "Харпер Ли",
+    "year": "2021",
+    "pages": "320",
+    "price": 599
+  },
+  {
+    "id": 20,
+    "image": "the-old-man-and-the-sea.jpg",
+    "title": "Старик и море",
+    "authors": "Эрнест Хемингуэй",
+    "year": "2020",
+    "pages": "120",
+    "price": 349
+  },
+  {
+    "id": 21,
+    "image": "pride-and-prejudice.jpg",
+    "title": "Гордость и предубеждение",
+    "authors": "Джейн Остин",
+    "year": "2020",
+    "pages": "400",
+    "price": 599
+  },
+  {
+    "id": 22,
+    "image": "frankenstein.jpg",
+    "title": "Франкенштейн",
+    "authors": "Мэри Шелли",
+    "year": "2020",
+    "pages": "280",
+    "price": 499
+  },
+  {
+    "id": 23,
+    "image": "dracula.jpg",
+    "title": "Дракула",
+    "authors": "Брэм Стокер",
+    "year": "2019",
+    "pages": "450",
+    "price": 599
+  },
+  {
+    "id": 24,
+    "image": "moby-dick.jpg",
+    "title": "Моби Дик",
+    "authors": "Герман Мелвилл",
+    "year": "2019",
+    "pages": "650",
+    "price": 699
+  },
+  {
+    "id": 25,
+    "image": "alice-in-wonderland.jpg",
+    "title": "Алиса в стране чудес",
+    "authors": "Льюис Кэрролл",
+    "year": "2019",
+    "pages": "180",
+    "price": 399
   }
 ]
