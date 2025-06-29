@@ -6,23 +6,19 @@ import { fetchBooks } from '../../../shared/lib/reducers/book/bookList/model/boo
 import { useNavigate } from 'react-router-dom'
 import { setBooks } from '../../../shared/lib/reducers/book/bookList/model/bookListSlice'
 import bookData from '../../../shared/assets/books.json';
+import { Book } from '../../book/ui/Book'
 export const BooksList = () => {
     const { books, isLoading, error } = useAppSelector(state => state.bookList)
     const { filteredBooks } = useAppSelector(state => state.bookList);
-    const navigate = useNavigate();
     const dispatch = useAppDispatch();
     useEffect(() => {
         dispatch(setBooks(bookData /* fetchBooks() */));
     }, [useAppDispatch]);
     return (
-        <div>
-            <div className="grid">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 gap-y-16 container mx-auto border-black mt-10">
                  {filteredBooks.map((book) => (
-                    <li key={book.id} onClick={() => navigate(`/book/${book.id}`)}>
-                        {book.title} - {book.authors}
-                    </li>
+                    <Book book={book}></Book>
                     ))}
             </div>
-        </div>
     )
 }

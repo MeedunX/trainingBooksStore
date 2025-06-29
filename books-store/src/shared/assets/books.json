@@ -1,227 +1,277 @@
 [
   {
     "id": 1,
-    "image": "war-and-peace.jpg",
+    "image": "war-and-peace.webp",
     "title": "Война и мир",
     "authors": "Лев Толстой",
     "year": "2025",
     "pages": "675",
-    "price": 799
+    "price": 799,
+    "description": "Эпическое произведение о жизни русского общества в эпоху войн с Наполеоном...",
+    "discount": 30
   },
   {
     "id": 2,
-    "image": "crime-and-punishment.jpg",
+    "image": "crime-and-punishment.webp",
     "title": "Преступление и наказание",
     "authors": "Фёдор Достоевский",
     "year": "2025",
     "pages": "550",
-    "price": 649
+    "price": 649,
+    "description": "История бедного студента Родиона Раскольникова, совершившего убийство ради идеи...",
+    "discount": 20
   },
   {
     "id": 3,
-    "image": "master-and-margarita.jpg",
+    "image": "master-and-margarita.webp",
     "title": "Мастер и Маргарита",
     "authors": "Михаил Булгаков",
     "year": "2025",
     "pages": "335",
-    "price": 599
+    "price": 599,
+    "description": "Сатирический роман о приезде дьявола в Москву...",
+    "discount": 10
   },
   {
     "id": 4,
-    "image": "anna-karenina.jpg",
+    "image": "anna-karenina.webp",
     "title": "Анна Каренина",
     "authors": "Лев Толстой",
     "year": "2024",
     "pages": "450",
-    "price": 699
+    "price": 699,
+    "description": "История трагической любви светской дамы Анны Карениной...",
+    "discount": 20
   },
   {
     "id": 5,
-    "image": "the-idiot.jpg",
+    "image": "the-idiot.webp",
     "title": "Идиот",
     "authors": "Фёдор Достоевский",
     "year": "2024",
     "pages": "600",
-    "price": 679
+    "price": 679,
+    "description": "Князь Мышкин возвращается в Россию после лечения от эпилепсии...",
+    "discount": 10
   },
   {
     "id": 6,
-    "image": "the-brothers-karamazov.jpg",
+    "image": "the-brothers-karamazov.webp",
     "title": "Братья Карамазовы",
     "authors": "Фёдор Достоевский",
     "year": "2024",
     "pages": "800",
-    "price": 799
+    "price": 799,
+    "description": "Последнее произведение писателя, в котором через конфликт отца и трёх сыновей поднимаются философские вопросы веры, зла, свободы и ответственности.",
+    "discount": 30
   },
   {
     "id": 7,
-    "image": "and Quiet Flows the Don.jpg",
+    "image": "and Quiet Flows the Don.webp",
     "title": "Тихий Дон",
     "authors": "Михаил Шолохов",
     "year": "2023",
     "pages": "900",
-    "price": 899
+    "price": 899,
+    "description": "Эпопея о жизни казачьего хутора во время Первой мировой войны...",
+    "discount": 20
   },
   {
     "id": 8,
-    "image": "the-captains-daughter.jpg",
+    "image": "the-captains-daughter.webp",
     "title": "Капитанская дочка",
     "authors": "Александр Пушкин",
     "year": "2023",
     "pages": "200",
-    "price": 499
+    "price": 499,
+    "description": "Исторический роман о молодом дворянине Петре Гринёве...",
+    "discount": 10
   },
   {
     "id": 9,
-    "image": "dead-souls.jpg",
+    "image": "dead-souls.webp",
     "title": "Мёртвые души",
     "authors": "Николай Гоголь",
     "year": "2023",
     "pages": "300",
-    "price": 549
+    "price": 549,
+    "description": "Сатирическое произведение о мошеннике Чичикове...",
+    "discount": 20
   },
   {
     "id": 10,
-    "image": "fathers-and-sons.jpg",
+    "image": "fathers-and-sons.webp",
     "title": "Отцы и дети",
     "authors": "Иван Тургенев",
     "year": "2023",
     "pages": "250",
-    "price": 499
+    "price": 499,
+    "description": "Роман о конфликте поколений: юный нигилист Евгений Базаров не принимает старые ценности...",
+    "discount": 10
   },
   {
     "id": 11,
-    "image": "the-insulted-and-injured.jpg",
+    "image": "the-insulted-and-injured.webp",
     "title": "Униженные и оскорблённые",
     "authors": "Фёдор Достоевский",
     "year": "2022",
     "pages": "320",
-    "price": 549
+    "price": 549,
+    "description": "Роман о жизни детей, брошенных судьбой...",
+    "discount": 0
   },
   {
     "id": 12,
-    "image": "doctor-zhivago.jpg",
+    "image": "doctor-zhivago.webp",
     "title": "Доктор Живаго",
     "authors": "Борис Пастернак",
     "year": "2022",
     "pages": "550",
-    "price": 699
+    "price": 699,
+    "description": "Поэтическая эпопея о враче Юрии Живаго...",
+    "discount": 0
   },
   {
     "id": 13,
-    "image": "we.jpg",
+    "image": "we.webp",
     "title": "Мы",
     "authors": "Евгений Замятин",
     "year": "2022",
     "pages": "220",
-    "price": 449
+    "price": 449,
+    "description": "Антиутопия о будущем мире, где люди лишены свободы...",
+    "discount": 0
   },
   {
     "id": 14,
-    "image": "the-heart-of-a-dog.jpg",
+    "image": "the-heart-of-a-dog.webp",
     "title": "Собачье сердце",
     "authors": "Михаил Булгаков",
     "year": "2022",
     "pages": "150",
-    "price": 399
+    "price": 399,
+    "description": "Сатирическая повесть о профессоре Преображенском...",
+    "discount": 0
   },
   {
     "id": 15,
-    "image": "the-fountainhead.jpg",
+    "image": "the-fountainhead.webp",
     "title": "Источник",
     "authors": "Айн Рэнд",
     "year": "2022",
     "pages": "750",
-    "price": 899
+    "price": 899,
+    "description": "Роман о талантливом архитекторе Говарде Рорке...",
+    "discount": 0
   },
   {
     "id": 16,
-    "image": "1984.jpg",
+    "image": "1984.webp",
     "title": "1984",
     "authors": "Джордж Оруэлл",
     "year": "2021",
     "pages": "320",
-    "price": 549
+    "price": 549,
+    "description": "Антиутопия о мире, полностью контролируемом государством...",
+    "discount": 0
   },
   {
     "id": 17,
-    "image": "animal-farm.jpg",
+    "image": "animal-farm.webp",
     "title": "Скотный двор",
     "authors": "Джордж Оруэлл",
     "year": "2021",
     "pages": "150",
-    "price": 399
+    "price": 399,
+    "description": "Аллегорическая сказка о животных, свергнувших хозяина...",
+    "discount": 0
   },
   {
     "id": 18,
-    "image": "brave-new-world.jpg",
+    "image": "brave-new-world.webp",
     "title": "О дивный новый мир",
     "authors": "Олдос Хаксли",
     "year": "2021",
     "pages": "280",
-    "price": 499
+    "price": 499,
+    "description": "Роман о будущем, где людей выращивают искусственно...",
+    "discount": 0
   },
   {
     "id": 19,
-    "image": "to-kill-a-mockingbird.jpg",
+    "image": "to-kill-a-mockingbird.webp",
     "title": "Убить пересмешника",
     "authors": "Харпер Ли",
     "year": "2021",
     "pages": "320",
-    "price": 599
+    "price": 599,
+    "description": "История маленькой девочки Скути, которая наблюдает за судебным процессом...",
+    "discount": 0
   },
   {
     "id": 20,
-    "image": "the-old-man-and-the-sea.jpg",
+    "image": "the-old-man-and-the-sea.webp",
     "title": "Старик и море",
     "authors": "Эрнест Хемингуэй",
     "year": "2020",
     "pages": "120",
-    "price": 349
+    "price": 349,
+    "description": "Повесть о старом рыбаке Сантьяго, который отправляется в открытое море...",
+    "discount": 0
   },
   {
     "id": 21,
-    "image": "pride-and-prejudice.jpg",
+    "image": "pride-and-prejudice.webp",
     "title": "Гордость и предубеждение",
     "authors": "Джейн Остин",
     "year": "2020",
     "pages": "400",
-    "price": 599
+    "price": 599,
+    "description": "Роман о взаимоотношениях между Элизабет Беннет и мистером Дарси...",
+    "discount": 0
   },
   {
     "id": 22,
-    "image": "frankenstein.jpg",
+    "image": "frankenstein.webp",
     "title": "Франкенштейн",
     "authors": "Мэри Шелли",
     "year": "2020",
     "pages": "280",
-    "price": 499
+    "price": 499,
+    "description": "Первый научно-фантастический роман в истории литературы...",
+    "discount": 0
   },
   {
     "id": 23,
-    "image": "dracula.jpg",
+    "image": "drakula.webp",
     "title": "Дракула",
     "authors": "Брэм Стокер",
     "year": "2019",
     "pages": "450",
-    "price": 599
+    "price": 599,
+    "description": "Классический роман о графе Дракуле, вампире из Трансильвании...",
+    "discount": 0
   },
   {
     "id": 24,
-    "image": "moby-dick.jpg",
+    "image": "moby-dick.webp",
     "title": "Моби Дик",
     "authors": "Герман Мелвилл",
     "year": "2019",
     "pages": "650",
-    "price": 699
+    "price": 699,
+    "description": "Эпическое произведение о капитане Ахаве, который obsessed с охотой на белого кита...",
+    "discount": 0
   },
   {
     "id": 25,
-    "image": "alice-in-wonderland.jpg",
+    "image": "alice-in-wonderland.webp",
     "title": "Алиса в стране чудес",
     "authors": "Льюис Кэрролл",
     "year": "2019",
     "pages": "180",
-    "price": 399
+    "price": 399,
+    "description": "Фантастическая сказка о девочке Алисе, упавшей в кроличью нору...",
+    "discount": 0
   }
 ]
