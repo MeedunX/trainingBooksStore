@@ -13,7 +13,7 @@ const navigate = useNavigate();
 const dispatch = useAppDispatch();
 const discountedPrice  = Math.round(item.price * (1 - (item.discount ?? 0) / 100))
   return (
-    <div className="flex justify-between max-h-[200px] mb-6">
+    <div className="flex justify-between max-h-[200px] mb-6 border-b-2 pb-2">
             <div className="flex gap-3">
                  <img className='cursor-pointer' src={`/assets//images/books/${item.image}`}
                 alt={item.title}
@@ -21,13 +21,13 @@ const discountedPrice  = Math.round(item.price * (1 - (item.discount ?? 0) / 100
                 onClick={() => navigate(`/info/${item.id}`)}
             />
                 <div className="flex justify-start">
-                    <p>{item.title}</p>
+                    <p className='text-2xl'>{item.title}</p>
                 </div>
             </div>
             <div className="flex gap-5">
                 <QuantityInput item={item}></QuantityInput>
                 <div className="flex justify-center flex-col gap-2">
-                    { item.discount != 0 
+                    { item.discount !== 0 
                     ? <div className="flex flex-col gap-2 items-end">
                         <p className='font-bold text-lg'>{discountedPrice * item.quantity} ₽</p>
                         <p className='line-through'>{item.price * item.quantity} ₽</p>
