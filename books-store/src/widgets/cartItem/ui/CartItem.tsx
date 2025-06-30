@@ -33,7 +33,9 @@ const discountedPrice  = Math.round(item.price * (1 - (item.discount ?? 0) / 100
                         <p className='line-through'>{item.price * item.quantity} ₽</p>
                         <p className='text-red-600'>Экономия {(item.price - discountedPrice) * item.quantity}  ₽</p>
                     </div>
-                    : <p>{item.price}</p>
+                    : <div className="flex flex-col gap-2 items-end">
+                        <p className='font-bold text-lg'>{discountedPrice * item.quantity} ₽</p>
+                    </div>
                     }
                     <button onClick={() =>
                         dispatch(removeFromCart({id: item.id}))
