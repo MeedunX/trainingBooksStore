@@ -6,7 +6,7 @@ export const Header = () => {
     return (
         <div className='bg-gray-800 p-4 flex justify-between px-20'>
             <Link to="/">
-                <div className="text-gray-400 hover:text-white rounded p-2">
+                <div className="text-gray-400 text-3xl p-0 hover:text-white rounded p-2">
                     Магазин книг
                 </div>
             </Link>

@@ -1,15 +1,14 @@
 import React from 'react'
 import { IBook } from '../../../shared/api/book';
 import { useNavigate } from 'react-router-dom';
-import { useAppDispatch } from '../../../shared/lib/store/redux';
-import { addToCart } from '../../../shared/lib/reducers/cart';
+import { useAppDispatch, useAppSelector } from '../../../shared/lib/store/redux';
+import { AddToCartBtn } from '../../../shared/ui/addToCartBtn';
 
 interface BookProps {
     book: IBook;
 }
 export const Book: React.FC<BookProps> = ({ book }) => {
     const navigate = useNavigate();
-    const dispatch = useAppDispatch();
     return (
         <div className="flex flex-col justify-between">
             <img className='cursor-pointer' src={`/assets//images/books/${book.image}`}
@@ -37,15 +36,7 @@ export const Book: React.FC<BookProps> = ({ book }) => {
                         ? book.description.slice(0, 75) + '...'
                         : book.description}
                 </p>
-                <button onClick={() =>
-                    dispatch(
-                        addToCart({
-                            ...book,
-                            quantity: 1,
-                            url: `/info/${book.id}`, // или другая логика формирования URL
-                        })
-                    )
-                } className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium  px-5 py-2.5 mt-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">В корзину</button>
+                <AddToCartBtn book={book}></AddToCartBtn>
             </div>
         </div>
     )
