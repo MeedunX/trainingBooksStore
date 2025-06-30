@@ -24,10 +24,10 @@ export const AddToCartBtn = ({ book }: { book: IBook }) => {
                 onClick={addToCartHandler}
                 disabled={isInCart}
                 className={`px-5 py-2.5 mt-3 me-2 mb-2 font-medium rounded-lg transition-colors ${isInCart
-                        ? 'bg-green-500 text-white'
-                        : 'bg-gray-800 text-white hover:bg-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700'
-                    }`}
-            >
+                    ? 'bg-green-500 text-white'
+                    : 'bg-gray-800 text-white hover:bg-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700'
+                    }`
+                }>
                 {isInCart ? 'Добавлено в корзину' : 'В корзину'}
             </button>
         </div>
