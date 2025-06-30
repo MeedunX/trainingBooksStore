@@ -9,7 +9,7 @@ import { store } from '../shared/lib/store/store';
 
 function App() {
   return (
-    <div>
+    <>
       <React.StrictMode>
         <Provider store={store}>
           <BrowserRouter>
@@ -18,7 +18,7 @@ function App() {
           </BrowserRouter>
         </Provider>
       </React.StrictMode>
-    </div>
+    </>
   );
 }
 

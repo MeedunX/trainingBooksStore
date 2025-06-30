@@ -36,7 +36,7 @@ export const Book: React.FC<BookProps> = ({ book }) => {
                         ? book.description.slice(0, 75) + '...'
                         : book.description}
                 </p>
-                <AddToCartBtn book={book}></AddToCartBtn>
+                <AddToCartBtn book={book}>В корзину</AddToCartBtn>
             </div>
         </div>
     )

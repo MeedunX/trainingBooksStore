@@ -7,6 +7,7 @@ export interface IBook {
     pages: string
     price: number,
     description: string,
-    discount: number
+    discount: number,
+    genre: string
 
 }
