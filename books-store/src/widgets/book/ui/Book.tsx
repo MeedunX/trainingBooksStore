@@ -26,7 +26,7 @@ export const Book: React.FC<BookProps> = ({ book }) => {
                                 <p className='text-xl line-through'>{book.price} ₽</p>
                                 <p className='text-2xl font-bold'>{Math.round(book.price * (1 - (book.discount ?? 0) / 100))} ₽</p>
                                 <p className='text-2xl font-bold bg-red-500 text-white px-3 rounded-3xl'>-{book.discount}%</p>
-                            </div> 
+                            </div>
                         }
                     </div>
                     <p className='text-xl'>{book.title}</p>
@@ -38,15 +38,15 @@ export const Book: React.FC<BookProps> = ({ book }) => {
                         : book.description}
                 </p>
                 <button onClick={() =>
-                dispatch(
-                addToCart({
-                    ...book,
-                    quantity: 1,
-                    url: `/info/${book.id}`, // или другая логика формирования URL
-                })
-                )
-            } className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium  px-5 py-2.5 mt-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">В корзину</button>
-                        </div>
+                    dispatch(
+                        addToCart({
+                            ...book,
+                            quantity: 1,
+                            url: `/info/${book.id}`, // или другая логика формирования URL
+                        })
+                    )
+                } className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 font-medium  px-5 py-2.5 mt-3 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">В корзину</button>
+            </div>
         </div>
     )
 }

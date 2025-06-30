@@ -5,6 +5,7 @@ export interface ICartItem {
     quantity: number
     year: string
     price: number
+    discount: number
     url: string
 
 }
