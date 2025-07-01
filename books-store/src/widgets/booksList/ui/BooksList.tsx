@@ -1,9 +1,6 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import './BooksList.css'
 import { useAppDispatch, useAppSelector } from '../../../shared/lib/store/redux'
-import { RootState } from '../../../shared/lib/store/store'
-import { fetchBooks } from '../../../shared/lib/reducers/book/bookList/model/bookListThunk'
-import { useNavigate } from 'react-router-dom'
 import { setBooks } from '../../../shared/lib/reducers/book/bookList/model/bookListSlice'
 import booksData from '../../../shared/assets/books.json';
 import { Book } from '../../book/ui/Book'
@@ -12,7 +9,7 @@ export const BooksList = () => {
     const { filteredBooks } = useAppSelector(state => state.bookList);
     const dispatch = useAppDispatch();
     useEffect(() => {
-        dispatch(setBooks(booksData /* fetchBooks() */));
+        dispatch(setBooks(booksData));
     }, [useAppDispatch]);
     return (
         isLoading

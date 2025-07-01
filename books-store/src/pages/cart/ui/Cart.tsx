@@ -43,6 +43,7 @@ export const Cart = () => {
               <p>Сумма скидки</p>
               <p>{Math.round(totalDiscount)} ₽</p>
             </div>
+            <hr />
             <div className="flex justify-between">
               <p className='text-xl'>Итого</p>
               <p className='text-xl'>{Math.round(totalPrice - totalDiscount)} ₽</p>
