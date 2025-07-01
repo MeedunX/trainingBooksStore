@@ -11,8 +11,8 @@ export const SearchBar = () => {
     const formData = new FormData(e.currentTarget)
     const searchQuery = formData.get('search') as string
     const selectedGenre = formData.get('genre') as string
-    dispatch(setSearchQuery(searchQuery || ''))
-    dispatch(setSelectedGenre(selectedGenre || ''))
+    dispatch(setSearchQuery(searchQuery))
+    dispatch(setSelectedGenre(selectedGenre))
   } */
   const searchHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch(setSearchQuery(e.target.value));
@@ -22,7 +22,7 @@ export const SearchBar = () => {
   };
   return (
     <div className='flex justify-between flex-grow'>
-      <form /* onSubmit={searchHandler} */ className="mx-auto flex w-full gap-2">
+      <form onSubmit={(e) => e.preventDefault()} /* onSubmit={searchHandler} */ className="mx-auto flex w-full gap-2">
         <select
           value={selectedGenre}
           onChange={genreHandler}
