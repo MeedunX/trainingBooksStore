@@ -4,10 +4,10 @@ import { addToCart } from '../../../lib/reducers/cart';
 import { IBook } from '../../../api/book';
 
 
-export const AddToCartBtn = ({ children, book }: { children: string, book: IBook  }) => {
-    const dispatch = useAppDispatch();
-    const { cart } = useAppSelector(state => state.cart);
-    const isInCart = cart.some((item) => item.id === book.id);
+export const AddToCartBtn = ({ children, book }: { children: string, book: IBook }) => {
+    const dispatch = useAppDispatch()
+    const { cart } = useAppSelector(state => state.cart)
+    const isInCart = cart.some((item) => item.id === book.id)
     const addToCartHandler = () => {
         if (!isInCart)
             dispatch(
@@ -28,7 +28,7 @@ export const AddToCartBtn = ({ children, book }: { children: string, book: IBook
                     : 'bg-gray-800 text-white hover:bg-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700'
                     }`
                 }>
-                {isInCart ? 'Добавлено в корзину' :  children }
+                {isInCart ? 'Добавлено в корзину' : children}
             </button>
         </div>
     )
