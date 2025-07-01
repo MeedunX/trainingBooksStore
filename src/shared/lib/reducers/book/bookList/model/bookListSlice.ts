@@ -28,6 +28,10 @@ export const booksListSlice = createSlice({
             state.books = action.payload
             state.filteredBooks = action.payload
         },
+        clearQuery: (state, action) => {
+            state.searchQuery = ''
+            state.selectedGenre = ''
+        },
         setSearchQuery: (state, action) => {
             state.searchQuery = action.payload
             filterBooks(state)
