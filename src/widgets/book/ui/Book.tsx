@@ -18,9 +18,10 @@ export const Book: React.FC<BookProps> = ({ book }) => {
             />
             <div className="flex flex-col">
                 <div className="mt-6 mb-3 flex flex-col gap-2">
+                    <p className='text-2xl'>{book.title}</p>
                     <div className="flex">
                         {book.discount === 0
-                            ? <p className='text-2xl font-bold'>{book.price} ₽</p>
+                            ? <p className='text-xl font-bold'>{book.price} ₽</p>
                             : <div className="flex gap-3">
                                 <p className='text-xl line-through'>{book.price} ₽</p>
                                 <p className='text-2xl font-bold'>{Math.round(book.price * (1 - (book.discount ?? 0) / 100))} ₽</p>
@@ -28,7 +29,7 @@ export const Book: React.FC<BookProps> = ({ book }) => {
                             </div>
                         }
                     </div>
-                    <p className='text-xl'>{book.title}</p>
+
                     <p className='text-gray-500'>{book.authors}</p>
                 </div>
                 <p>

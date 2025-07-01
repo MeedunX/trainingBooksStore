@@ -9,8 +9,8 @@ type CartItemProps = {
   item: ICartItem;
 };
 export const CartItem = ({item}: CartItemProps) => {
-const navigate = useNavigate();
-const dispatch = useAppDispatch();
+const navigate = useNavigate()
+const dispatch = useAppDispatch()
 const discountedPrice  = Math.round(item.price * (1 - (item.discount ?? 0) / 100))
   return (
     <div className="flex justify-between max-h-[200px] mb-6 border-b-2 pb-2">

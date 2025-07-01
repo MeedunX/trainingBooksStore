@@ -4,19 +4,30 @@ import { setSearchQuery, setSelectedGenre } from '../../../shared/lib/reducers/b
 
 export const SearchBar = () => {
   const dispatch = useAppDispatch();
-  const {searchQuery} = useAppSelector(state => state.bookList)
-  const searchHandler = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); 
-    const formData = new FormData(e.currentTarget);
-    const searchQuery = formData.get('search') as string;
-    const selectedGenre = formData.get('genre') as string;
-    dispatch(setSearchQuery(searchQuery || ''));
-    dispatch(setSelectedGenre(selectedGenre || ''));
-  }
+  const { searchQuery } = useAppSelector(state => state.bookList)
+  const { selectedGenre } = useAppSelector(state => state.bookList)
+  /* const searchHandler = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget)
+    const searchQuery = formData.get('search') as string
+    const selectedGenre = formData.get('genre') as string
+    dispatch(setSearchQuery(searchQuery || ''))
+    dispatch(setSelectedGenre(selectedGenre || ''))
+  } */
+  const searchHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    dispatch(setSearchQuery(e.target.value));
+  };
+  const genreHandler = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    dispatch(setSelectedGenre(e.target.value));
+  };
   return (
     <div className='flex justify-between flex-grow'>
-      <form onSubmit={searchHandler} className="mx-auto flex w-full gap-2">
-        <select name="genre" className="border text-sm rounded-lg block p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white ">
+      <form /* onSubmit={searchHandler} */ className="mx-auto flex w-full gap-2">
+        <select
+          value={selectedGenre}
+          onChange={genreHandler}
+          name="genre"
+          className="border text-sm rounded-lg block p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white ">
           <option value="">Жанр</option>
           <option value="Философский роман">Философский роман</option>
           <option value="Сатира">Сатира</option>
@@ -33,15 +44,17 @@ export const SearchBar = () => {
               </svg>
             </div>
             <input
-              defaultValue={searchQuery}
-              type="search" 
-              name='search' 
-              className="block w-full p-4 ps-10 text-sm border rounded-lg bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus-visible:outline-none" 
+              /* defaultValue={searchQuery} */
+              value={searchQuery}
+              onChange={searchHandler}
+              type="search"
+              name='search'
+              className="block w-full p-4 ps-10 text-sm border rounded-lg bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus-visible:outline-none"
               placeholder="Поиск" />
-            <button type="submit" className="text-white absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 bg-gray-800 hover:bg-gray-900">Найти</button>
+            {/* <button type="submit" className="text-white absolute end-2.5 bottom-2.5 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 bg-gray-800 hover:bg-gray-900">Найти</button> */}
           </div>
         </div>
-        
+
       </form>
 
     </div>

@@ -9,17 +9,16 @@ const initialState: CartState = {
     cart: []
 } */
 const loadCartFromLocalStorage = (): ICartItem[] => {
-    const storedCart = localStorage.getItem('cart');
+    const storedCart = localStorage.getItem('cart')
     if (storedCart) {
         try {
-            return JSON.parse(storedCart);
+            return JSON.parse(storedCart)
         } catch (e) {
-            console.error(e);
+            console.error(e)
         }
     }
     return [];
 };
-
 
 const initialState: { cart: ICartItem[] } = {
     cart: loadCartFromLocalStorage(),
@@ -45,13 +44,13 @@ export const cartSlice = createSlice({
             } else {
                 state.cart[itemIndex].quantity += action.payload.quantity;
             }
-            localStorage.setItem('cart', JSON.stringify(state.cart));
+            localStorage.setItem('cart', JSON.stringify(state.cart))
         },
         removeFromCart: (state, action: PayloadAction<{ id: number }>) => {
             state.cart = state.cart.filter(
                 (item) => item.id !== action.payload.id
             )
-            localStorage.setItem('cart', JSON.stringify(state.cart));
+            localStorage.setItem('cart', JSON.stringify(state.cart))
             return state
         },
         clearCart: (state, action) => {
